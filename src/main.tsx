@@ -15,9 +15,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <BrowserRouter basename="/vite-React-TS">
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path=":id" element={<ItemDetail />} />
-          <Route path="error" element={<ErrorPage />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="/:id" element={<ItemDetail />} />
+          <Route path="/error" element={<ErrorPage />} />
+          <Route path="/*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </Provider>
